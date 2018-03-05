@@ -1,8 +1,11 @@
 import * as express from 'express'
-import * as passport from 'passport'
 
 export namespace Main {
     export function init(app: express.Express) {
-        app.get("*", (req, res) => res.render("landing"))
+        simple(app, "*", "landing")
+    }
+
+    function simple(app: express.Express, from: string, to: string) {
+        app.get(from, (req, res) => res.render(to))
     }
 }

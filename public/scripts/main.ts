@@ -1,1 +1,3 @@
-SocketHandler.init()
+declare const io
+
+const socket = io()
