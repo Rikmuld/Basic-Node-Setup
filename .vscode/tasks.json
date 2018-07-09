@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",    
+    "tasks": [
+        {
+            "taskName": "client",
+            "command": "tsc",
+            "type": "shell",
+            "args": ["--watch", "-p", "./scripts/client"],
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$tsc"
+        },
+        {
+            "taskName": "server",
+            "command": "tsc",
+            "type": "shell",
+            "args": ["--watch", "-p", "./scripts/server"],
+            "presentation": {
+                "reveal": "silent"
+            },
+            "problemMatcher": "$tsc"
+        }
+    ]
+}
