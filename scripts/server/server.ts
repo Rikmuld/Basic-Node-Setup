@@ -12,10 +12,6 @@ import { Routes } from "./routes/routes"
 const app = express()
 const server = http.createServer(app)
 const io = socket(server)
-
-const root = __dirname
-const viewsDir = path.join(root, 'views')
-const publicDir = path.join(root, 'public')
  
 Setup.setupExpress(app, __dirname + "/../")
 SocketHandler.bindHandlers(app, io)
